@@ -32,6 +32,7 @@ For example:
 [//]: # (start|embed-tag)
 it was replaced 
 [//]: # (end|embed-tag)
+```
 
 In a ".html" file it is with:
 ```html
