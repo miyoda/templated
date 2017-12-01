@@ -1,5 +1,4 @@
 # Templated
------
 
 You can copy automatically al your common config files from all your projects from other directory or from a git repository
 
@@ -22,26 +21,32 @@ For example:
 The "content part" was replaced in your file with the position of the embed-tag indicated.
 You must indicate in your file where you want put the content with your embed tag.
 In a ".md" file it is with:
-> [//]: # (start|embed-tag)
-> it was replaced 
-> [//]: # (end|embed-tag)
+```
+[//]: # (start|embed-tag)
+it was replaced 
+[//]: # (end|embed-tag)
+```
 
 For example:
-> [//]: # (start|embed-tag)
-> it was replaced 
-> [//]: # (end|embed-tag)
+```
+[//]: # (start|embed-tag)
+it was replaced 
+[//]: # (end|embed-tag)
 
 In a ".html" file it is with:
-> <!-- start|embed-tag --> it is remplaced <!-- end|embed-tag -->
+```html
+<!-- start|embed-tag --> it is remplaced <!-- end|embed-tag -->
+```
 
 For example:
-> <!-- start|copyright --> it is remplaced <!-- end|copyright -->
-
+```html
+<!-- start|copyright --> it is remplaced <!-- end|copyright -->
+```
 
 If you want put in de start or de end of the file you don't need define the embed tag position.
 Simply use files with tag "start" or "end" like:
->readme.md|start.part
->readme.md|end.part
+> readme.md|start.part
+> readme.md|end.part
 
 
 You can view an example of use in:
