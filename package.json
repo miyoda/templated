@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miyoda/templated.git"
+    "url": "git+https://github.com/miyoda/templated-npm.git"
   },
   "keywords": [
     "template",
@@ -20,7 +20,7 @@
   "author": "miyoda",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/miyoda/templated/issues"
+    "url": "https://github.com/miyoda/templated-npm/issues"
   },
-  "homepage": "https://github.com/miyoda/templated#readme"
+  "homepage": "https://github.com/miyoda/templated-npm#readme"
 }
