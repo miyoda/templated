@@ -20,33 +20,20 @@ For example:
 
 The "content part" was replaced in your file with the position of the embed-tag indicated.
 You must indicate in your file where you want put the content with your embed tag.
-In a ".md" file it is with:
-```
-[//]: # (start|embed-tag)
-it was replaced 
-[//]: # (end|embed-tag)
-```
-
-For example:
-```
-[//]: # (start|embed-tag)
-it was replaced 
-[//]: # (end|embed-tag)
-```
-
-In a ".html" file it is with:
+In a .md/.html file it is with:
 ```html
-<!-- start|embed-tag --> it is remplaced <!-- end|embed-tag -->
+<!-- start|embed-tag --> it was replaced <!-- end|embed-tag -->
 ```
 
 For example:
 ```html
-<!-- start|copyright --> it is remplaced <!-- end|copyright -->
+<!-- start|copyright --> it was replaced <!-- end|copyright -->
 ```
 
 If you want put in de start or de end of the file you don't need define the embed tag position.
 Simply use files with tag "start" or "end" like:
 > readme.md|start.part
+
 > readme.md|end.part
 
 
