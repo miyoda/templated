@@ -1,13 +1,28 @@
 # Templated
-
 You can copy automatically al your common config files from all your projects from other directory or from a git repository
 
 ## Config your project
-You must create a ".templated" file with your "templated repositories" (one for line).
+Add the dependency:
+> npm install templated-npm --save-dependency
+
+You must create a "templated.json" file with your templated reposiotory source configured:
+```js
+{
+    "source": "https://github.com/miyoda/templated-example-template.git"
+}
+```
+Or you can indicate multiple sources with an array:
+```js
+{
+    "sources": [         
+        "https://github.com/miyoda/templated-example-template.git",
+        "../templated-example-template"
+    ]
+}
+```
 A templated repository can be a local directory or a git repository url.
 
 ## Config your template repository
-
 ### Copy files
 All files in the templated repository was copied to your project automatically.
 
