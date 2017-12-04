@@ -1,6 +1,6 @@
 {
   "name": "templated-npm",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "Automatically copy common files or part of files between projects",
   "main": "bin.js",
   "bin": "./bin.js",
