@@ -34,7 +34,12 @@ function runTemplatedFile(fromPath, toPath) {
             }
             else {
                 console.log('link ', fromPath, toPath);
-                fs.unlinkSync(toPath);
+                try {
+                    fs.unlinkSync(toPath);
+                }
+                catch (e) {
+                    // unnecesary
+                }
                 fs.linkSync(fromPath, toPath);
             }
         }

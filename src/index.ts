@@ -34,7 +34,11 @@ function runTemplatedFile (fromPath: string, toPath: string) {
         runTemplatedPart(fromPath, toPath.substring(0, toPath.lastIndexOf('|')), tag)
       } else {
         console.log('link ',fromPath, toPath)
-        fs.unlinkSync(toPath)
+        try {
+          fs.unlinkSync(toPath)
+        } catch (e) {
+          // unnecesary
+        }
         fs.linkSync(fromPath, toPath)
       }
     } else {
