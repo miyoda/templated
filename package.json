@@ -2,11 +2,18 @@
   "name": "templated-npm",
   "version": "1.0.2",
   "description": "Automatically copy common files or part of files between projects",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "bin.js",
   "bin": "./bin.js",
+  "scripts": {
+    "test": "npm run mocha --recursive ./test/**/*",
+    "mocha": "mocha -r ts-node/register",
+    "start": "npm run build && npm run watch",
+    "build": "npm run build-ts && npm run tslint",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "debug": "npm run build && npm start"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miyoda/templated-npm.git"
@@ -23,5 +30,21 @@
   "bugs": {
     "url": "https://github.com/miyoda/templated-npm/issues"
   },
-  "homepage": "https://github.com/miyoda/templated-npm#readme"
+  "homepage": "https://github.com/miyoda/templated-npm#readme",
+  "devDependencies": {
+    "@types/chai": "4.0.4",
+    "@types/mocha": "2.2.43",
+    "@types/node": "^8.0.54",
+    "chai": "4.1.2",
+    "mocha": "3.5.3",
+    "nodemon": "^1.11.0",
+    "shelljs": "^0.7.7",
+    "ts-node": "3.3.0",
+    "tslint": "^5.0.0",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
 }

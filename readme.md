@@ -1,5 +1,7 @@
 # Templated
-You can copy automatically al your common config files from all your projects from other directory or from a git repository
+You can copy/link automatically all your common config files of all your projects from a template directory.
+You can config to copy parts of files that is common in different projects.
+It's util for common config files/parts for all subprojects/microservices like .gitignore, copyright, etc.
 
 ## Config your project
 Add the dependency:
@@ -8,19 +10,18 @@ Add the dependency:
 You must create a "templated.json" file with your templated reposiotory source configured:
 ```js
 {
-    "source": "https://github.com/miyoda/templated-example-template.git"
+    "source": "../templated-example-template2"
 }
 ```
 Or you can indicate multiple sources with an array:
 ```js
 {
     "sources": [         
-        "https://github.com/miyoda/templated-example-template.git",
         "../templated-example-template"
+        "../templated-example-template2"
     ]
 }
 ```
-A templated repository can be a local directory or a git repository url.
 
 ## Config your template repository
 ### Copy files
