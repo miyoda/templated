@@ -25,7 +25,7 @@ Or you can indicate multiple sources with an array:
 
 ## Config your template repository
 ### Copy files
-All files in the templated repository was copied to your project automatically.
+All files in the templated repository will be copied to your project automatically.
 
 ### Copy parts
 If you want to embed a part of file you can create in your templated repository a file with the name:
@@ -34,7 +34,7 @@ file-name-when-you-want-embed|embed-tag.part
 For example:
 >readme.md|copyright.part
 
-The "content part" was replaced in your file with the position of the embed-tag indicated.
+The "content part" will be replaced in your file with the position of the embed-tag indicated.
 You must indicate in your file where you want put the content with your embed tag.
 In a .md/.html file it is with:
 ```html
@@ -46,7 +46,7 @@ For example:
 <!-- start|copyright --> it was replaced <!-- end|copyright -->
 ```
 
-If you want put in de start or de end of the file you don't need define the embed tag position.
+If you want put it at the start or end of the file you don't need define the embed tag position.
 Simply use files with tag "start" or "end" like:
 > readme.md|start.part
 
